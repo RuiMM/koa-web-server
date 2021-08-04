@@ -1,0 +1,30 @@
+{
+  "name": "koa-web-server",
+  "version": "1.0.0",
+  "description": "koa-web-server",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "web",
+    "koa",
+    "server"
+  ],
+  "author": "meirui",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.95.8",
+    "koa": "^2.9.0",
+    "koa-body": "^4.2.0",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^10.0.0",
+    "md5": "^2.3.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^18.2.1"
+  }
+}
