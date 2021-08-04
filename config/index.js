@@ -1,6 +1,8 @@
 const config = {
   host: process.env.IP || 'localhost',
   port: process.env.PORT || 6020,
+  logSQL: false,
+  isLocal: process.env.NODE_ENV === 'local', // 本地环境
   db: {
     host: process.env.DB_HOST || 'localhost',
     port: process.env.DB_PORT || 3306,
