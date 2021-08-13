@@ -1,14 +1,15 @@
+require('dotenv').config();
 const Koa = require('koa');
 const koaCors = require('@koa/cors');
-const logger = require('koa-logger');
 const koaBody = require('koa-body');
 const config = require('./config');
 const ServiceError = require('./common/ServiceError');
+const accessLog = require('./middleware/accessLog');
 
 const app = new Koa();
 
 app.use(koaCors());
-app.use(logger());
+app.use(accessLog());
 app.use(koaBody({
   multipart: true,
   formidable: {

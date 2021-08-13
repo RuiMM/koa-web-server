@@ -4,13 +4,13 @@ const config = {
   logSQL: false,
   isLocal: process.env.NODE_ENV === 'local', // 本地环境
   db: {
-    host: process.env.DB_HOST || 'localhost',
-    port: process.env.DB_PORT || 3306,
-    user: process.env.DB_USER || 'user',
-    password: process.env.DB_PASS || 'your password',
-    database: process.env.DB_NAME || 'demo',
+    host: process.env.DB_HOST,
+    port: process.env.DB_PORT,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASS,
+    database: process.env.DB_NAME,
   },
-  tokenSecretKey: 'your token secretKey',
+  tokenSecretKey: process.env.TOKEN_SECRETKEY,
 };
 
 module.exports = config;
